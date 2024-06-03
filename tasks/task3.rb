@@ -1,6 +1,5 @@
 # Написать скрипт для поиска первых N простых чисел.
 
-# DO NOT MODIFY CODE BELOW
 require_relative '../lib/find_n'
 require 'test/unit'
 require 'prime'
