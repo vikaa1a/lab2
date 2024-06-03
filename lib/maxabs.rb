@@ -2,10 +2,10 @@
 def maxabs(arr)
   return 0 if arr.size == 0
 
-  max1 = arr.max_by(&:abs) # находим число с максимальным абсолютным значением
-  arr.delete(max1) # удаляем максимальное число из массива
-  max2 = arr.max_by(&:abs) # находим второе по величине число с максимальным абсолютным значением
+  max1 = arr.max_by(&:abs)
+  arr.delete(max1)
+  max2 = arr.max_by(&:abs) 
 
-  product = (max1 * max2).abs # вычисляем абсолютное значение произведения двух максимальных чисел
-  [max1, max2, product.round(1)] # возвращаем массив с двумя максимальными числами и их произведением
+  product = (max1 * max2).abs
+  [max1, max2, product.round(1)] 
 end
